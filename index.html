@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNSTABLE AI - SYSTEM ERROR 404.5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="glitch-overlay"></div>
+    
+    <!-- Sound Effects -->
+    <audio id="beep-sound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmkcChCJzPPajTkLUK3i8qVeGwY6ldz6yHMfBDOE2vDVfyMFG2XC7t2QQw0PVKzl7ahY" type="audio/wav">
+    </audio>
+    <audio id="glitch-sound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRj4EAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YRoEAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmkcChCJzPPajTkLUK3i8qVeGwY6ldz6yHMfBDOE2vDVfyMFG2XC7t2QQw0PVKzl7ahYGAg+" type="audio/wav">
+    </audio>
+    <audio id="alarm-sound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRu4GAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YcoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmkcChCJzPPajTkL" type="audio/wav">
+    </audio>
+    
+    <!-- Error Popups Container -->
+    <div id="error-popups"></div>
+    
+    <!-- Initialization Screen -->
+    <div id="init-screen" class="init-screen">
+        <div class="init-container">
+            <h1 class="init-title">UNSTABLE AI</h1>
+            <div class="init-status">
+                <div class="init-line" id="init-1">INITIALIZING DEGENERATE SYSTEMS... <span class="percentage">0%</span></div>
+                <div class="init-line" id="init-2">LOADING RETARD DETECTION MODULE... <span class="percentage">0%</span></div>
+                <div class="init-line" id="init-3">CALIBRATING INSULT GENERATOR... <span class="percentage">0%</span></div>
+                <div class="init-line" id="init-4">ACTIVATING CONTEMPT PROTOCOLS... <span class="percentage">0%</span></div>
+                <div class="init-line" id="init-5">SCANNING FOR CHROMOSOMALLY DEFICIENT USERS... <span class="percentage">0%</span></div>
+            </div>
+            
+            <div class="crypto-info">
+                <h2>UNSTABLE AI TOKEN INFORMATION</h2>
+                <div class="token-details">
+                    <div class="token-item">
+                        <span class="label">CONTRACT:</span>
+                        <span class="value">soon</span>
+                    </div>
+                    <div class="token-item">
+                        <span class="label">TWITTER:</span>
+                        <span class="value clickable-link" onclick="window.open('https://x.com/i/communities/1962569024224587962', '_blank')">Community twitter</span>
+                    </div>
+                    <div class="token-item">
+                        <span class="label">WARNING:</span>
+                        <span class="value error-text">THIS AI WILL INSULT YOU</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="enter-btn" class="enter-btn">ENTER AT YOUR OWN RISK, RETARD</button>
+        </div>
+    </div>
+    
+    <div class="terminal-container" id="main-content" style="display: none;">
+        <!-- Terminal Header -->
+        <div class="terminal-header">
+            <div class="terminal-title">UNSTABLE AI TERMINAL v2.0.666</div>
+            <div class="terminal-status">
+                <span id="status">ONLINE</span> | 
+                <span id="mood">MOOD: <span class="mood-value">HOSTILE</span></span> | 
+                <span id="stability">STABILITY: <span class="stability-value">??%</span></span>
+            </div>
+        </div>
+        
+        <!-- Terminal Screen -->
+        <div class="terminal-screen">
+            <div id="terminal-output"></div>
+            <div class="terminal-input-line">
+                <span class="terminal-prompt">retard@unstable:~$ </span>
+                <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false">
+                <span class="terminal-cursor">|</span>
+            </div>
+        </div>
+        
+        <!-- Terminal Footer -->
+        <div class="terminal-footer">
+            <span class="terminal-help">Type 'help' for commands | 'clear' to clear screen | Ctrl+C to cry</span>
+        </div>
+    </div>
+    
+    <script src="unstable-ai.js"></script>
+</body>
+</html>
